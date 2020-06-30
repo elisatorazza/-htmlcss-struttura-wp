@@ -18,9 +18,12 @@ main {
   height: 600px;
   margin: 1% 0;
 }
+main * {
+  float: left;
+}
+
 /* colonna sx */
 .left {
-  float:left;
   height: 70%;
   width: 24%;
   background-color: #CC87DA;
@@ -28,7 +31,6 @@ main {
 /* /colonna sx */
 /* colonna centrale */
 .central {
-  float: left;
   height: 100%;
   width: 48%;
   background-color: #730671;
@@ -38,7 +40,6 @@ main {
 /* colonne dx */
 /* prima colonna dx */
 .right {
-  float: left;
   height: 40%;
   width:24%;
   background-color: #CC87DA;
@@ -46,7 +47,6 @@ main {
 /* /prima colonna dx */
 /* seconda colonna dx */
 .bottom-right {
-  float: left;
   height: 40%;
   width: 24%;
   background-color: #CC87DA;
