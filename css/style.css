@@ -3,8 +3,9 @@
   margin: 0;
   padding: 0;
 }
-body {
-  margin: 10px;
+.container {
+  width: 1200px;
+  margin: auto;
 }
 /* header */
 header {
@@ -18,13 +19,13 @@ main {
   height: 600px;
   margin: 1% 0;
 }
-main * {
+.left, .central, .right {
   float: left;
 }
 main::after {
   content:"";
-  display: block;
-  clear:both;
+  display: table;
+  clear: both;
 }
 
 /* colonna sx */
@@ -45,17 +46,16 @@ main::after {
 /* colonne dx */
 /* prima colonna dx */
 .right {
-  height: 40%;
+  height: 90%;
   width:24%;
-  background-color: #CC87DA;
 }
 /* /prima colonna dx */
 /* seconda colonna dx */
-.bottom-right {
-  height: 40%;
-  width: 24%;
+.widget {
+  height: 50%;
+  width: 100%;
   background-color: #CC87DA;
-  margin-top: 1%
+  margin-bottom: 5%;
 }
 /* /seconda colonna dx */
 /* /colonne dx */
